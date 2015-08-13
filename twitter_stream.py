@@ -64,10 +64,10 @@ class CustomListener(StreamListener):
 listener = CustomListener()
 auth = OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
-stream = Stream(auth, listener) #connects to streaming api
+stream = Stream(auth, listener) 
 
 t=threading.Timer(60.0, listener.on_timer)
 t.start()
 
-#This line filter Twitter Streams to capture data by the keywords: 'python', 'javascript', 'ruby'
+#This line filter Twitter Streams to capture data by the keywords
 stream.filter(track=['javascript'])
