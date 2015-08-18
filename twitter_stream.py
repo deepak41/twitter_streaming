@@ -4,6 +4,7 @@ from tweepy import Stream
 import json
 import threading
 import copy
+import sys
 
 #Variables that contains the user credentials to access Twitter API 
 access_token = "157385150-JTgmvgmZwEcplQzUHSNpdEG1be98PYZWrJIJQ4st"
@@ -70,4 +71,4 @@ t=threading.Timer(60.0, listener.on_timer)
 t.start()
 
 #This line filter Twitter Streams to capture data by the keywords
-stream.filter(track=['javascript'])
+stream.filter(track=[sys.argv[1]])
