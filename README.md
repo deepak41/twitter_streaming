@@ -3,11 +3,9 @@
 ## How to start
 To start run:
 
-$python twitter_stream.py
+$python twitter_stream.py javascript
 
-To change the keyword which you want to track, edit the last line of the file
-
-stream.filter(track=['javascript'])
+Assuming the keyword to be tracked is javascript
 
 ##How to stop
 To stop run:
