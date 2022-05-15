@@ -7,7 +7,7 @@ $python twitter_stream.py javascript
 
 Assuming the keyword to be tracked is javascript
 
-##How to stop
+##How to stop  
 To stop run:
 
 $pkill -9 -f twitter_stream.py
